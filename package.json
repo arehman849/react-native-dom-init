@@ -1,0 +1,46 @@
+{
+  "name": "react-native-dom-init-test",
+  "version": "1.0.0",
+  "description": "\"CLI to add react-native-dom to existing react-native project\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel src -d build",
+    "watch": "watch \"yarn compile\" src",
+    "dom": "react-native run-dom",
+    "bundleDom": "react-native build-dom"
+  },
+  "bin": {
+    "react-native-dom-init": "index.js"
+  },
+  "files": [
+    "index.js",
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arehman849/react-native-dom-init.git"
+  },
+  "keywords": [
+    "react-native-dom-init",
+    "react-native-dom"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arehman849/react-native-dom-init/issues"
+  },
+  "homepage": "https://github.com/arehman849/react-native-dom-init#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "find-up": "^5.0.0",
+    "npm-registry": "^0.1.13",
+    "semver": "^7.3.4",
+    "valid-url": "^1.0.9",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "watch": "^1.0.2"
+  }
+}
